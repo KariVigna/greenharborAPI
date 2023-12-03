@@ -16,7 +16,7 @@ namespace GreenHarborApi.Controllers
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Compost>>> GetComposts(string city, string zip)
+    public async Task<ActionResult<IEnumerable<Compost>>> GetComposts(string city, string zip, string contents)
     {
       IQueryable<Compost> query = _db.Composts.AsQueryable();
 
@@ -29,7 +29,13 @@ namespace GreenHarborApi.Controllers
       {
         query = query.Where(entry => entry.Zip == zip);
       }
-      return await query.ToListAsync();
+
+      if (contents != null)
+      {
+        query = query.Where(entry => entry.Contents.Contains(contents));
+      }
+
+       return await query.ToListAsync();
     }
 
     [HttpGet("{id}")]
