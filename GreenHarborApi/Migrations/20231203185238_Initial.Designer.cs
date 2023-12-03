@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GreenHarborApi.Migrations
 {
     [DbContext(typeof(GreenHarborApiContext))]
-    [Migration("20231128034555_AddInitial")]
-    partial class AddInitial
+    [Migration("20231203185238_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,7 +59,8 @@ namespace GreenHarborApi.Migrations
                             ContactName = "",
                             ContactPhone = "",
                             Contents = "",
-                            Location = "Near road marker 43, by the red barn"
+                            Location = "Near road marker 43, by the red barn",
+                            Zip = "97222"
                         },
                         new
                         {
@@ -68,7 +69,8 @@ namespace GreenHarborApi.Migrations
                             ContactName = "",
                             ContactPhone = "",
                             Contents = "",
-                            Location = "Past HR rd, end of the gravel driveway"
+                            Location = "Past HR rd, end of the gravel driveway",
+                            Zip = "97999"
                         },
                         new
                         {
@@ -77,8 +79,23 @@ namespace GreenHarborApi.Migrations
                             ContactName = "",
                             ContactPhone = "",
                             Contents = "",
-                            Location = "Middle of town, near the post office"
+                            Location = "Middle of town, near the post office",
+                            Zip = "97111"
                         });
+                });
+
+            modelBuilder.Entity("GreenHarborApi.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

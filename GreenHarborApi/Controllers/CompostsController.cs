@@ -33,7 +33,7 @@ namespace GreenHarborApi.Controllers
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Compost>> GetComposts(int id)
+    public async Task<ActionResult<Compost>> GetCompost(int id)
     {
       Compost compost = await _db.Composts.FindAsync(id);
 
