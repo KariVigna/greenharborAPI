@@ -1,16 +1,22 @@
 # _Green Harbor API_
 
-#### By _Jessica Hattig, Kari Vigna, Greg Stillwell, Mackenzie Granger, and Will Jolley_
+#### By _Jessica Hattig, Kari Vigna, Greg Stillwell, Mac Granger, and Will Jolley_
 
 #### _An API of Communal Compost Piles for the Green Harbor App_
 
 ## Technologies Used
 
 * C#
+* Razor HTML
+* CSS
 * .NET 6.0
 * Entity Framework Core
 * JSON
-
+* MySQL
+* Visual Studio Code
+* Github
+* Git
+* Swagger
 
 ## Description
 
@@ -174,13 +180,16 @@ Sample Response Body
   * compostId must be declared in the request body for DELETE requests too
 
 ## Known Bugs
-
-N/A
+* _Please visit this projects [GitHub repository]() to submit Issues and Pull Requests._
 
 ## License
 
-e-mail me at yeswilljolley@gmail.com with any issues, questions, ideas, concerns.
+MIT License
 
-MIT
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Copyright (c) 2023 Jessica Hattig, Kari Vigna, Greg Stillwell, Mackenzie Granger, Will Jolley
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Copyright (c) Kari Vigna, Jessica Hattig, Will Jolley, Greg Stillwell, Mac Granger 2023 
